@@ -5,37 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="header2.css">
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Furniro</title>
 </head>
 
 <body>
-    <header class="grid grid-cols-1 md:grid-cols-4 py-7 px-[54px]">
-        <img src="./img/logo fram.png" class="h-[41px] w-[185px]" alt="Logo" />
+    <header>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./img/logo fram.png" class="h-[41px] w-[185px]" class="logo " alt="Logo" />
+                    <button class="nav-toggle bg-[#B88E2F] rounded">
+                        <i class='fas fa-bars px-2 py-1 '></i>
+                    </button>
+                </div>
+                <ul class="links">
+                    <li class="text-base px-[37px]">
+                        <a href="./assignhome.html">Home</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./assignshop.html">Shop</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="">About</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./contact.html">Conatct</a>
+                    </li>
 
-        <nav class="col-span-2 flex flex-nowrap">
-            <a href="./assignhome.html" class="text-base px-[37px]">Home</a>
-            <a href="./assignshop.html" class="text-base px-[37px]">Shop</a>
-            <a href="" class="text-base px-[37px]">About</a>
-            <a href="" class="text-base px-[37px]">Conatct</a>
+                </ul>
+                <ul class="icons">
+                    <li class="mx-[22px]">
+                        <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <a href="./cartpage.html">
+                            <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="flex flex-nowrap mt-4 md:mt-0">
-            <div class="mx-[22px]">
-                <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
-            </div>
-            <div class="mx-[22px]">
-                <a href="./cartpage.html">
-                    <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
-                </a>
-            </div>
-        </div>
     </header>
     <section style="
     background-image: url('./image/Rectangle\ 1.png');
@@ -53,27 +71,26 @@
     </section>
     <section class="mt-[3.9375rem] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl: w-full container mx-auto ">
         <div class="container max-w-[38rem] px-[4.8125rem] py-[2.1875rem]">
-            <form>
+            <form name="users-form">
                 <div>
                     <h1 class=" font-semibold text-4xl leading-[3.375rem]">Billing details</h1>
                     <div class="flex flex-wrap justify-between">
                         <div class="mt-[2.25rem]">
-                            <label for="firstName" class="font-medium text-base leading-6 ">First Name</label>
-                            <br><input type="text" id="firstName"
+                            <label for="firstName" class="font-medium text-base leading-6 ">First Name</label><br>
+                            <input type="text" id="firstName" name="firstName"
                                 class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
-                                required>
+                                required />
                         </div>
                         <div class="mt-[2.25rem]">
-                            <label for="Last Name" class="font-medium text-base leading-6">Last Name</label>
-                            <br><input type="text" id="lastName"
+                            <label for="lastName" class="font-medium text-base leading-6">Last Name</label><br>
+                            <input type="text" name="lastName"
                                 class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
-                                required>
+                                required />
                         </div>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="CountryRegion" class="font-medium text-base leading-6">Country / Region</label>
-                        <br>
-                        <select id="CountryRegion"
+                        <label for="country" class="font-medium text-base leading-6">Country / Region</label>
+                        <select name="country" id="country"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                             <option value="Sri Lanka">Sri Lanka</option>
                             <option value="Bangladesh">Bangladesh</option>
@@ -84,19 +101,18 @@
                         </select>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="streetAddress" class="font-medium text-base leading-6">Street address</label>
-                        <br><input type="text" id="streetAddress"
+                        <label for="address" class="font-medium text-base leading-6">Street address</label>
+                        <input type="text" name="address"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="townCity" class="font-medium text-base leading-6">Town / City</label>
-                        <br><input type="text" id="townCity"
+                        <label for="town" class="font-medium text-base leading-6">Town / City</label>
+                        <input type="text" name="town"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="Province" class="font-medium text-base leading-6">Province</label>
-                        <br>
-                        <select id="Province"
+                        <label for="province" class="font-medium text-base leading-6">Province</label>
+                        <select name="province" id="province"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                             <option value=" Koshi"> Koshi</option>
                             <option value=" Madhesh Pradesh">Madhesh Pradesh</option>
@@ -108,26 +124,27 @@
                         </select>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="ZIP code" class="font-medium text-base leading-6">ZIP code</label>
-                        <br><input type="text" id="ZIP code"
+                        <label for="zipcode" class="font-medium text-base leading-6">ZIP Code</label>
+                        <input type="number" name="zipcode" id="zipcode"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                     </div>
                     <div class="mt-[2.25rem]">
                         <label for="phone" class="font-medium text-base leading-6">Phone</label>
-                        <br><input type="text" id="phone"
+                        <input type="tel" name="phone" id="phone"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                     </div>
                     <div class="mt-[2.25rem]">
-                        <label for="emailAddress" class="font-medium text-base leading-6">Email address</label>
-                        <br><input type="text" id="emailAddress"
+                        <label for="email" class="font-medium text-base leading-6">Email Id</label>
+                        <input type="email" required id="email address" name="email"
                             class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
                     </div>
+                    <div class="mt-[2.25rem]">
 
-                    <input type="text" id="additionalInformation" placeholder="  Additional Information"
-                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full mt-[2.25rem]"
-                        required>
-
+                        <input type="text" name="additional" placeholder="  Additional Information"
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                    </div>
                 </div>
+
             </form>
         </div>
         <div class="container max-w-[38rem] px-[2.375rem] py-[5.4375rem] ">
@@ -167,8 +184,45 @@
                 purposes described in our <span class="font-bold">privacy policy.</span></p>
             <div class="flex justify-center">
                 <button
-                    class="font-normal text-xl leading-8 border border-[#000000] rounded-2xl w-[19.875rem] h-16 mt-[2.5rem] hover:bg-neutral-100">Place
+                    class="font-normal text-xl leading-8 border border-[#000000] rounded-2xl w-[19.875rem] h-16 mt-[2.5rem] hover:bg-neutral-100"
+                    type="button" onclick="validateForm() " id="openModal">Place
                     order</button>
+            </div>
+        </div>
+
+        <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden justify-center items-center z-50">
+            <div class="flex justify-center items-center h-full w-full">
+                <div class="bg-white rounded-lg p-8 w-6/12 fade-in modal-content">
+                    <div class="mb-4">
+                        <h2 class="text-xl font-bold">Data List</h2>
+                    </div>
+                    <ul class="flex items-center bg-red-100">
+                        <table>
+                    <thead>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>CountryRegion</th>
+                        <th>Address</th>
+                        <th>Town/City</th>
+                        <th>province</th>
+                        <th>ZIP Code</th>
+                        <th>phone</th>
+                        <th>Email Address</th>
+                        <th>Additional Information</th>
+                    </thead>
+                    <tbody id="data">
+                        <tr class="p-[1rem]">
+    
+                        </tr>
+                    </tbody>
+                </table>
+                    </ul>
+                    <div>
+                        <button id="closeModal"
+                            class="bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem]">
+                            Close</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -246,6 +300,9 @@
         <div class="border-[1px] border-[#D9D9D9] mt-[3rem]"></div>
         <p class="mt-[2.1875rem] font-normal text-sm leading-6">2023 furino. All rights reverved</p>
     </footer>
+    <script src="./header2.js"></script>
+    <script src="./checkout.js"></script>
+    <script src="checkmodal.js"></script>
 </body>
 
 </html>

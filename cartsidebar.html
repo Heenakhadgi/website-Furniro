@@ -5,37 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
     <title>Furniro</title>
 </head>
 
 <body class="relative">
-    <header class="grid grid-cols-1 md:grid-cols-4 py-7 px-[54px]">
-        <img src="./img/logo fram.png" class="h-[41px] w-[185px]" alt="Logo" />
+    <header>
 
-        <nav class="col-span-2 flex flex-nowrap">
-            <a href="./assignhome.html" class="text-base px-[37px]">Home</a>
-            <a href="./assignshop.html" class="text-base px-[37px]">Shop</a>
-            <a href="" class="text-base px-[37px]">About</a>
-            <a href="" class="text-base px-[37px]">Conatct</a>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./img/logo fram.png" class="h-[41px] w-[185px]" class="logo " alt="Logo" />
+                    <button class="nav-toggle bg-[#B88E2F] rounded">
+                        <i class='fas fa-bars px-2 py-1 '></i>
+                    </button>
+                </div>
+                <ul class="links">
+                    <li class="text-base px-[37px]">
+                        <a href="./assignhome.html">Home</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./assignshop.html">Shop</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="">About</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./contact.html">Conatct</a>
+                    </li>
+    
+                </ul>
+                <ul class="icons">
+                    <li class="mx-[22px]">
+                        <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <a href="./cartpage.html">
+                            <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="flex flex-nowrap mt-4 md:mt-0">
-            <div class="mx-[22px]">
-                <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
-            </div>
-        </div>
     </header>
-
     <section class="bg-[#F9F1E7] min-h-[6.25rem]">
         <div class="flex items-center  pl-[6.25rem] py-[2.375rem]">
             <p class="text-[#9F9F9F] text-base font-normal leading-6">Home</p>
@@ -272,13 +292,13 @@
             <h1 class=" relative font-semibold leading-9">
                 Shopping Cart
             </h1>
-            <img src="./section/shoppingcart/bag.png" alt="cart_bag"
-                class="w-[1.0625rem] h-[1.1875rem]">
+            <img src="./section/shoppingcart/bag.png" alt="cart_bag" class="w-[1.0625rem] h-[1.1875rem]">
         </div>
         <div class="border-b-[1px] border-[#D9D9D9] mt-[26px] max-w-[17.9375rem]"></div>
         <div class="">
             <div class=" flex items-center gap-x-8 mx-8 mt-[2.625rem]">
-                <img src="./section/shoppingcart/asgaard-sofa.png" alt="agaard-sofa" class="w-[6.5625rem] h-[6.5625rem]">
+                <img src="./section/shoppingcart/asgaard-sofa.png" alt="agaard-sofa"
+                    class="w-[6.5625rem] h-[6.5625rem]">
                 <div>
                     <p class="text-base font-normal leading-6">Asgaard sofa</p>
                     <span class="flex items-center justify-between">
@@ -287,10 +307,12 @@
                         <p class="text-xs font-medium leading-[1.125rem] text-[#B88E2F]">Rs. 250,000.00</p>
                     </span>
                 </div>
-                <span class="ml-14"><img src="./section/shoppingcart/delete_cross.png" alt="delete_cross" class="w-5 h-5"></span>
+                <span class="ml-14"><img src="./section/shoppingcart/delete_cross.png" alt="delete_cross"
+                        class="w-5 h-5"></span>
             </div>
             <div class=" flex items-center gap-x-8 mx-8 mt-5">
-                <img src="./section/shoppingcart/Casaliving Wood.png" alt="Casaliving Wood" class="w-[6.5625rem] h-[6.5625rem]">
+                <img src="./section/shoppingcart/Casaliving Wood.png" alt="Casaliving Wood"
+                    class="w-[6.5625rem] h-[6.5625rem]">
                 <div>
                     <p class="text-base font-normal leading-6">Casaliving Wood</p>
                     <span class="flex items-center justify-between">
@@ -299,7 +321,8 @@
                         <p class="text-xs font-medium leading-[1.125rem] text-[#B88E2F]">Rs. 270,000.00</p>
                     </span>
                 </div>
-                <span class="ml-9"><img src="./section/shoppingcart/delete_cross.png" alt="delete_cross" class="w-5 h-5"></span>
+                <span class="ml-9"><img src="./section/shoppingcart/delete_cross.png" alt="delete_cross"
+                        class="w-5 h-5"></span>
             </div>
         </div>
         <div class="flex items-center mx-8 mt-[15.8125rem]">
@@ -309,11 +332,13 @@
         <div class="border-b-[1px] border-[#D9D9D9] mt-[1.4375rem] "></div>
         <div class="flex items-center gap-3.5 mt-[1.625rem] mx-8 pb-[1.625rem]">
             <button class="border-[1px] border-black rounded-2xl w-[5.4375rem] h-[1.875rem]">Cart</button>
-            <button class="border-[1px] border-black rounded-2xl w-[7.375rem] h-[1.875rem]">Checkout</button>
-            <button class="border-[1px] border-black rounded-2xl w-[8.4375rem] h-[1.875rem]">Comparison</button>
+            <a href="./checkout.html"><button
+                    class="border-[1px] border-black rounded-2xl w-[7.375rem] h-[1.875rem]">Checkout</button></a>
+            <a href="./productcomparision.html"><button
+                    class="border-[1px] border-black rounded-2xl w-[8.4375rem] h-[1.875rem]">Comparison</button></a>
         </div>
     </div>
-    
+    <script src="./header2.js"></script>
 </body>
 
 </html>

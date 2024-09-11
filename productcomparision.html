@@ -5,45 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header2.css">
     <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Furniro</title>
 </head>
 
 <body>
-    <header class="grid grid-cols-1 md:grid-cols-4 py-7 px-[54px]">
-        <img src="./img/logo fram.png" class="h-[41px] w-[185px]" alt="Logo" />
-
-        <nav class="col-span-2 flex flex-nowrap">
-            <a href="./assignhome.html" class="text-base px-[37px]">Home</a>
-            <a href="./assignshop.html" class="text-base px-[37px]">Shop</a>
-            <a href="" class="text-base px-[37px]">About</a>
-            <a href="" class="text-base px-[37px]">Conatct</a>
-        </nav>
-
-        <div class="flex flex-nowrap mt-4 md:mt-0">
-            <div class="mx-[22px]">
-                <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="./img/logo fram.png" class="h-[41px] w-[185px]" class="logo " alt="Logo" />
+                <button class="nav-toggle bg-[#B88E2F] rounded">
+                    <i class='fas fa-bars px-2 py-1 '></i>
+                </button>
             </div>
-            <div class="mx-[22px]">
-                <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
-            </div>
-            <div class="mx-[22px]">
-                <a href="./cartpage.html">
-                    <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
-                </a>
-            </div>
+            <ul class="links">
+                <li class="text-base px-[37px]">
+                    <a href="./assignhome.html" >Home</a>
+                </li>
+                <li class="text-base px-[37px]">
+                    <a href="./assignshop.html" >Shop</a>
+                </li>
+                <li class="text-base px-[37px]">
+                    <a href="" >About</a>
+                </li>
+                <li class="text-base px-[37px]">
+                    <a href="./contact.html" >Conatct</a>
+                </li>
+                
+            </ul>
+            <ul class="icons">
+                <li class="mx-[22px]">
+                    <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+                </li>
+                <li class="mx-[22px]">
+                    <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
+                </li>
+                <li class="mx-[22px]">
+                    <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
+                </li>
+                <li class="mx-[22px]">
+                    <a href="./cartpage.html">
+                        <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
+      </nav>
     <section style="
     background-image: url('./image/Rectangle\ 1.png');
     background-size: cover;
     background-repeat: no-repeat;" class="w-full min-h-[316px] flex items-center justify-center">
         <div class="flex flex-col items-center justify-center">
             <img src="./product_comparision_img/logo.png" alt="logo" class="w-[4.8125rem] h-[4.8125rem]">
-            <h1 class="font-medium text-5xl leading-[4.5rem]">Product Comparison</h1>
+            <h1 class="font-medium text-5xl text-center leading-[4.5rem]">Product Comparison</h1>
             <div class="flex items-end justify-center">
                 <p class=" font-medium text-base leading-6">Home</p>
                 <img src="./image/right_arrow.png" alt="right_arrow" class="w-5 h-5">
@@ -208,7 +224,7 @@
                 <p class="font-normal text-xl leading-[1.625rem] text-left ml-14 max-w-60">For Warranty Claims or Any Product Related Issues Please Email at <span class="tracking-tighter text-lg">operations@trevifurniture.com</span></p>
                 <p class="font-normal text-xl leading-[1.625rem] ml-14">Warranty Against Manufacturing Defect</p>
                 <p class="font-normal text-xl leading-[1.625rem] ml-14 max-w-60 ">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>
-                <p class="font-normal text-xl leading-[1.625rem] ml-14">1 Year <span class="flex items-end"><button class=" bg-[#B88E2F] text-white w-[13.4375rem] h-16 text-xl leading-[1.625rem] mt-14">Add to Cart</button></span></p>
+                <p class="font-normal text-xl leading-[1.625rem] ml-14">1 Year <span class="flex items-end"><a href="./cartpage.html"><button class=" bg-[#B88E2F] text-white w-[13.4375rem] h-16 text-xl leading-[1.625rem] mt-14">Add to Cart</button></a></span></p>
                 
             </div>
             <div class=" grid grid-rows-6 grid-flow-col gap-[2.125rem] ">
@@ -217,7 +233,7 @@
                 <p class="font-normal text-xl leading-[1.625rem] ml-16">For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</p>
                 <p class="font-normal text-xl leading-[1.625rem] ml-16">Warranty of the product is limited to manufacturing defects only.</p>
                 <p class="font-normal text-xl leading-[1.625rem] ml-16">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>
-                <p class="font-normal text-xl leading-[1.625rem] ml-16">3 Months <span class="flex items-end"><button class=" bg-[#B88E2F] text-white w-[13.4375rem] h-16 text-xl leading-[1.625rem] mt-14">Add to Cart</button></span></p>
+                <p class="font-normal text-xl leading-[1.625rem] ml-16">3 Months <span class="flex items-end"><a href=""><button class=" bg-[#B88E2F] text-white w-[13.4375rem] h-16 text-xl leading-[1.625rem] mt-14">Add to Cart</button></a></span></p>
                 
 
             </div>
@@ -297,6 +313,7 @@
         <div class="border-[1px] border-[#D9D9D9] mt-[3rem]"></div>
         <p class="mt-[2.1875rem] font-normal text-sm leading-6">2023 furino. All rights reverved</p>
     </footer>
+  <script src="./header2.js"></script>
 </body>
 
 </html>

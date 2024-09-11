@@ -5,35 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header2.css">
     <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Furniro</title>
 </head>
 
 <body>
-    <header class="grid grid-cols-1 md:grid-cols-4 py-7 px-[54px]">
-        <img src="./img/logo fram.png" class="h-[41px] w-[185px]" alt="Logo" />
-
-        <nav class="col-span-2 flex flex-nowrap">
-            <a href="./assignhome.html" class="text-base px-[37px]">Home</a>
-            <a href="./assignshop.html" class="text-base px-[37px]">Shop</a>
-            <a href="" class="text-base px-[37px]">About</a>
-            <a href="" class="text-base px-[37px]">Conatct</a>
-        </nav>
-
-        <div class="flex flex-nowrap mt-4 md:mt-0">
-            <div class="mx-[22px]">
-                <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+    <header>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./img/logo fram.png" class="h-[41px] w-[185px]" class="logo " alt="Logo" />
+                    <button class="nav-toggle bg-[#B88E2F] rounded">
+                        <i class='fas fa-bars px-2 py-1 '></i>
+                    </button>
+                </div>
+                <ul class="links">
+                    <li class="text-base px-[37px]">
+                        <a href="./assignhome.html" >Home</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./assignshop.html" >Shop</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="" >About</a>
+                    </li>
+                    <li class="text-base px-[37px]">
+                        <a href="./contact.html" >Conatct</a>
+                    </li>
+                    
+                </ul>
+                <ul class="icons">
+                    <li class="mx-[22px]">
+                        <img src="./img/customer id.png" class="h-[28px] w-[28px]" alt="customer id" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
+                    </li>
+                    <li class="mx-[22px]">
+                        <a href="./cartpage.html">
+                            <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="mx-[22px]">
-                <img src="./img/search.png" class="h-[28px] w-[28px]" alt="search" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/heart.png" class="h-[28px] w-[28px]" alt="favorite" />
-            </div>
-            <div class="mx-[22px]">
-                <img src="./img/cart.png" class="h-[28px] w-[28px]" alt="cart" />
-            </div>
-        </div>
+          </nav>
     </header>
     <section style="
     background-image: url('./image/Rectangle\ 1.png');
@@ -51,9 +71,9 @@
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mx-auto mt-[4.5rem]">
-        <div class="ml-[6.25rem] col-span-2">
-            <div class=" max-w-[51.0625rem]">
-                <div class="bg-[#F9F1E7] grid grid-cols-6  content-centre py-4">
+        <div class=" grid justify-items-center col-span-2">
+            <div class=" max-w-[51.0625rem] hidden md:block">
+                <div class="bg-[#F9F1E7] flex flex-wrap-reverse justify-around content-centre py-4">
                     <h2 class=" text-base font-medium leading-6 col-span-2 text-center"> Product</h2>
                     <h2 class=" text-base font-medium leading-6"> Price</h2>
                     <h2 class=" text-base font-medium leading-6 text-center"> Quantity</h2>
@@ -61,7 +81,7 @@
                 </div>
                 <div class="grid grid-cols-6 content-centre items-center mt-[3.4375rem]">
                     <img src="./section/shoppingcart/asgaard-sofa.png" alt="asgaard-sofa" class="w-[6.75rem] h-[6.5625rem]">
-                    <p class=" text-base font-normal leading-6 text-[#9F9F9F]"> Asgaard sofa </p>
+                    <p class=" text-base font-normal text-center leading-6 text-[#9F9F9F]"> Asgaard sofa </p>
                     <p class=" text-base font-normal leading-6 text-[#9F9F9F]"> Rs. 250,000.00 </p>
                     <div class="grid justify-items-center">
                         <p class="text-base text-center font-normal leading-6 border-[1px] rounded py-1 w-8 h-8 "> 1 </p>
@@ -72,7 +92,7 @@
     
             </div>
         </div>
-        <div class="bg-[#F9F1E7] max-w-[24.5625rem] ml-8">
+        <div class="bg-[#F9F1E7] max-w-[24.5625rem] ml-8 mr-8">
             <h2 class="font-semibold text-[2rem] text-center leading-[3rem] pt-[0.9375rem]">Cart Totals</h2>
             <div class="flex items-center justify-center gap-[3.875rem] mt-[3.8125rem]">
                 <p class=" text-base font-medium leading-6">Subtotal</p>
@@ -83,7 +103,7 @@
                 <p class=" text-xl font-medium leading-[1.875rem] text-[#B88E2F]"> Rs. 250,000.00 </p>
             </div>
             <div class="flex justify-center mt-10 pb-[5rem]">
-              <a href="./checkout.html" target="_blank">
+              <a href="./checkout.html" target="_top">
                   <button class="text-xl font-normal leading-[1.875rem] border-[1px] border-black rounded-2xl py-3.5 px-[3.68rem]">Check Out</button>
               </a>  
             </div>
@@ -140,8 +160,8 @@
                 <p class="text-[#9F9F9F] text-base leading-[1.5rem]">Links</p>
                 <a href="./assignhome.html" class=" font-medium text-base leading-6 mt-[3.4375rem]">Home</a>
                 <a href="./assignshop.html" class=" font-medium text-base leading-6 mt-[2.875rem]">Shop</a>
-                <a href="" class=" font-medium text-base leading-6 mt-[2.875rem]">About</a>
-                <a href="" class=" font-medium text-base leading-6 mt-[2.875rem]">Contact</a>
+                <a href="./blog.html" class=" font-medium text-base leading-6 mt-[2.875rem]">About</a>
+                <a href="./contact.html" class=" font-medium text-base leading-6 mt-[2.875rem]">Contact</a>
             </div>
             <div class="flex flex-col items-left ml-[90px]">
                 <p class="text-[#9F9F9F] text-base leading-[1.5rem] ">Help</p>
