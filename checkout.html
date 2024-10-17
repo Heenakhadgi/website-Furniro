@@ -29,7 +29,7 @@
                         <a href="./assignshop.html">Shop</a>
                     </li>
                     <li class="text-base px-[37px]">
-                        <a href="">About</a>
+                        <a href="./blog.html">About</a>
                     </li>
                     <li class="text-base px-[37px]">
                         <a href="./contact.html">Conatct</a>
@@ -79,13 +79,13 @@
                             <label for="firstName" class="font-medium text-base leading-6 ">First Name</label><br>
                             <input type="text" id="firstName" name="firstName"
                                 class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
-                                required />
+                                required/>
                         </div>
                         <div class="mt-[2.25rem]">
                             <label for="lastName" class="font-medium text-base leading-6">Last Name</label><br>
                             <input type="text" name="lastName"
                                 class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
-                                required />
+                                required/>
                         </div>
                     </div>
                     <div class="mt-[2.25rem]">
@@ -103,12 +103,12 @@
                     <div class="mt-[2.25rem]">
                         <label for="address" class="font-medium text-base leading-6">Street address</label>
                         <input type="text" name="address"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                     <div class="mt-[2.25rem]">
                         <label for="town" class="font-medium text-base leading-6">Town / City</label>
                         <input type="text" name="town"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                     <div class="mt-[2.25rem]">
                         <label for="province" class="font-medium text-base leading-6">Province</label>
@@ -126,22 +126,22 @@
                     <div class="mt-[2.25rem]">
                         <label for="zipcode" class="font-medium text-base leading-6">ZIP Code</label>
                         <input type="number" name="zipcode" id="zipcode"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                     <div class="mt-[2.25rem]">
                         <label for="phone" class="font-medium text-base leading-6">Phone</label>
                         <input type="tel" name="phone" id="phone"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                     <div class="mt-[2.25rem]">
                         <label for="email" class="font-medium text-base leading-6">Email Id</label>
                         <input type="email" required id="email address" name="email"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                     <div class="mt-[2.25rem]">
 
                         <input type="text" name="additional" placeholder="  Additional Information"
-                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required/>
                     </div>
                 </div>
 
@@ -196,30 +196,37 @@
                     <div class="mb-4">
                         <h2 class="text-xl font-bold">Data List</h2>
                     </div>
-                    <ul class="flex items-center bg-red-100">
-                        <table>
-                    <thead>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>CountryRegion</th>
-                        <th>Address</th>
-                        <th>Town/City</th>
-                        <th>province</th>
-                        <th>ZIP Code</th>
-                        <th>phone</th>
-                        <th>Email Address</th>
-                        <th>Additional Information</th>
-                    </thead>
-                    <tbody id="data">
-                        <tr class="p-[1rem]">
-    
-                        </tr>
-                    </tbody>
-                </table>
-                    </ul>
+                    <div class="overflow-auto rounded-lg shadow ">
+                        <ul class="flex items-center">
+                            <table>
+                                <thead class="bg-gray-50 border-b-2 border-gray-200 w-full" >
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">First Name</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Last Name</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">CountryRegion
+                                    </th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Address</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Town/City</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">province</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">ZIP Code</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">phone</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Email Address</th>
+                                    <th class="w-20 p-3 text-sm font-semibold tracking-wide text-left">Additional
+                                        Information</th>
+                                </thead>
+                                <tbody id="data" class="divide-y divide-gray-200">
+                                    <tr class="p-[1rem]">
+                                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                                        
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </ul>
+                    </div>
                     <div>
                         <button id="closeModal"
-                            class="bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem]">
+                            class="bg-[#B88E2F] py-[0.875rem] px-[3.5rem] rounded-[0.3125rem] mt-[3.0625rem] ">
                             Close</button>
                     </div>
                 </div>
@@ -265,40 +272,42 @@
         </div>
 
     </section>
-    <footer class="mt-[3rem] container mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            <div>
-                <h3 class="font-bold text-2xl leading-[36px]">Funiro.</h3>
-                <p class="mt-[3.125rem] text-[#9F9F9F] text-base leading-[1.5rem]">400 University Drive Suite 200
-                    Coral<br> Gables,<br>
-                    FL 33134 USA</p>
+    <footer class="mt-[3.125rem] container mx-auto border-t-[1px]">
+        <div class="mx-auto flex flex-col justify-center gap-[1.25rem] px-10  mt-[3rem] md:gap-[4.8125rem]">
+            <div class=" flex flex-col gap-20 md:flex-row lg:gap-[7.25rem]">
+                <div class="flex flex-col gap-11 items-left">
+                    <h3 class="font-bold text-2xl leading-[36px]">Funiro.</h3>
+                    <p class=" text-[#9F9F9F] text-base leading-[1.5rem]">400 University Drive Suite 200 Coral<br>
+                        Gables,<br>
+                        FL 33134 USA</p>
+                </div>
+                <div class="flex flex-col gap-11 items-left ">
+                    <p class="text-[#9F9F9F] text-base leading-[1.5rem]">Links</p>
+                    <a href="./assignhome.html" class=" font-medium text-base leading-6 ">Home</a>
+                    <a href="./assignshop.html" class=" font-medium text-base leading-6 ">Shop</a>
+                    <a href="./blog.html" class=" font-medium text-base leading-6 ">About</a>
+                    <a href="./contact.html" class=" font-medium text-base leading-6 ">Contact</a>
+                </div>
+                <div class="flex flex-col gap-10 items-left">
+                    <p class="text-[#9F9F9F] text-base leading-[1.5rem] ">Help</p>
+                    <p class=" font-medium text-base leading-6 ">Payment Options</p>
+                    <p class=" font-medium text-base leading-6 ">Returns</p>
+                    <p class=" font-medium text-base leading-6 ">Privacy Policies</p>
+                </div>
+                <div class="flex flex-col gap-10 ">
+                    <p class="text-[#9F9F9F] text-base leading-[1.5rem]">Newsletter</p>
+                    <p
+                        class=" text-[#9F9F9F] font-normal text-sm underline underline-offset-8 leading-[21px] ">
+                        Enter Your Email Address</p>
+                </div>
+                <div class="flex">
+                    <p class=" font-normal text-sm underline underline-offset-8 leading-[21px] mt-[4rem] ">SUBSCRIBE
+                    </p>
+                </div>
             </div>
-            <div class="flex flex-col justify-between items-left ml-[90px]">
-                <p class="text-[#9F9F9F] text-base leading-[1.5rem]">Links</p>
-                <a href="./assignhome.html" class=" font-medium text-base leading-6 mt-[3.4375rem]">Home</a>
-                <a href="./assignshop.html" class=" font-medium text-base leading-6 mt-[2.875rem]">Shop</a>
-                <a href="" class=" font-medium text-base leading-6 mt-[2.875rem]">About</a>
-                <a href="" class=" font-medium text-base leading-6 mt-[2.875rem]">Contact</a>
-            </div>
-            <div class="flex flex-col items-left ml-[90px]">
-                <p class="text-[#9F9F9F] text-base leading-[1.5rem] ">Help</p>
-                <p class=" font-medium text-base leading-6 mt-[3.4375rem]">Payment Options</p>
-                <p class=" font-medium text-base leading-6 mt-[2.875rem]">Returns</p>
-                <p class=" font-medium text-base leading-6 mt-[2.875rem]">Privacy Policies</p>
-            </div>
-            <div class="flex flex-col items-left ml-[80px]">
-                <p class="text-[#9F9F9F] text-base leading-[1.5rem]">Newsletter</p>
-                <p
-                    class=" text-[#9F9F9F] font-normal text-sm underline underline-offset-8 leading-[21px] mt-[3.4375rem]">
-                    Enter Your Email Address</p>
-            </div>
-            <div class="grid content-centre">
-                <p class=" font-normal text-sm underline underline-offset-8 leading-[21px] mt-[4.895rem]">SUBSCRIBE
-                </p>
-            </div>
+            <span class="border-[1px] border-[#D9D9D9] mt-[3rem]"></span>
+            <p class=" font-normal text-sm leading-6">2023 furino. All rights reverved</p>
         </div>
-        <div class="border-[1px] border-[#D9D9D9] mt-[3rem]"></div>
-        <p class="mt-[2.1875rem] font-normal text-sm leading-6">2023 furino. All rights reverved</p>
     </footer>
     <script src="./header2.js"></script>
     <script src="./checkout.js"></script>
